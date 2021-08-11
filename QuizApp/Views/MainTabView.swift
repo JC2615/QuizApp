@@ -1,0 +1,25 @@
+//
+//  MainTabView.swift
+//  QuizApp
+//
+//  Created by Joshua Curry on 8/11/21.
+//
+
+import SwiftUI
+
+struct MainTabView: View {
+    var body: some View {
+        TabView {
+            GameView(question: Question.allQuestions[1])
+                .tabItem { Label("Game", systemImage: "gamecontroller") }
+            ControlsView()
+                .tabItem { Label("Controls", systemImage: "gear") }
+        }
+    }
+}
+
+struct MainTabView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainTabView()
+    }
+}
