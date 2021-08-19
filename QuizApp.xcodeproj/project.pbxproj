@@ -11,6 +11,8 @@
 		3156B5E226C45DCE0014C654 /* BottomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5E126C45DCE0014C654 /* BottomText.swift */; };
 		3156B5E426C4602A0014C654 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5E326C4602A0014C654 /* MainTabView.swift */; };
 		3156B5E626C460D60014C654 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B5E526C460D60014C654 /* ControlsView.swift */; };
+		3156B61226CEC5CC0014C654 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B61126CEC5CC0014C654 /* Game.swift */; };
+		3156B61526CECA540014C654 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156B61426CECA540014C654 /* GameViewModel.swift */; };
 		F7BA2DBF26BB1CE5007281AA /* QuizAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA2DBE26BB1CE5007281AA /* QuizAppApp.swift */; };
 		F7BA2DC126BB1CE5007281AA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA2DC026BB1CE5007281AA /* GameView.swift */; };
 		F7BA2DC326BB1CE9007281AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7BA2DC226BB1CE9007281AA /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		3156B5E126C45DCE0014C654 /* BottomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomText.swift; sourceTree = "<group>"; };
 		3156B5E326C4602A0014C654 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		3156B5E526C460D60014C654 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		3156B61126CEC5CC0014C654 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		3156B61426CECA540014C654 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		F7BA2DBB26BB1CE5007281AA /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BA2DBE26BB1CE5007281AA /* QuizAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppApp.swift; sourceTree = "<group>"; };
 		F7BA2DC026BB1CE5007281AA /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				3156B5DD26C457580014C654 /* Question.swift */,
+				3156B61126CEC5CC0014C654 /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -58,6 +63,14 @@
 				3156B5E526C460D60014C654 /* ControlsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3156B61326CECA2E0014C654 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3156B61426CECA540014C654 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F7BA2DB226BB1CE5007281AA = {
@@ -79,9 +92,10 @@
 		F7BA2DBD26BB1CE5007281AA /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				F7BA2DBE26BB1CE5007281AA /* QuizAppApp.swift */,
-				3156B5E026C45D910014C654 /* Views */,
 				3156B5DF26C45D8A0014C654 /* Models */,
+				3156B5E026C45D910014C654 /* Views */,
+				3156B61326CECA2E0014C654 /* ViewModels */,
+				F7BA2DBE26BB1CE5007281AA /* QuizAppApp.swift */,
 				F7BA2DC226BB1CE9007281AA /* Assets.xcassets */,
 				F7BA2DC726BB1CE9007281AA /* Info.plist */,
 				F7BA2DC426BB1CE9007281AA /* Preview Content */,
@@ -168,7 +182,9 @@
 			files = (
 				3156B5DE26C457580014C654 /* Question.swift in Sources */,
 				3156B5E226C45DCE0014C654 /* BottomText.swift in Sources */,
+				3156B61226CEC5CC0014C654 /* Game.swift in Sources */,
 				F7BA2DC126BB1CE5007281AA /* GameView.swift in Sources */,
+				3156B61526CECA540014C654 /* GameViewModel.swift in Sources */,
 				F7BA2DBF26BB1CE5007281AA /* QuizAppApp.swift in Sources */,
 				3156B5E626C460D60014C654 /* ControlsView.swift in Sources */,
 				3156B5E426C4602A0014C654 /* MainTabView.swift in Sources */,
