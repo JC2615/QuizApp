@@ -40,13 +40,15 @@ struct GameView: View {
                     }
                 }
                 if viewModel.selectionWasMade {
-                    BottomText(str: "Next"){
-                        viewModel.advanceGameState()
-                    }
+                    Button(action: viewModel.advanceGameState, label: {
+                        BottomText(str: "Next")
+                    })
+                   
                 }
             }
             .padding(.bottom)
         }
+        .navigationBarHidden(true)
     }
     
 }

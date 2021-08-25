@@ -9,17 +9,14 @@ import SwiftUI
 
 struct BottomText: View {
     let str: String
-    let onClick: () -> Void
     
     var body: some View {
         HStack {
             Spacer()
-            Button(action: onClick, label: {
-                Text(str)
-                    .font(.body)
-                    .fontWeight(.bold)
-                    .padding()
-            })
+            Text(str)
+                .font(.body)
+                .fontWeight(.bold)
+                .padding()
             Spacer()
         }
         .background(Color.blue.opacity(0.4))
@@ -28,7 +25,7 @@ struct BottomText: View {
 
 struct BottomText_Previews: PreviewProvider {
     static var previews: some View {
-        BottomText(str: "Test text") {}
+        BottomText(str: "Test text")
             .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
 }
