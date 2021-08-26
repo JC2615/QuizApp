@@ -14,7 +14,7 @@ struct GameView: View {
     
     var body: some View {
         ZStack {
-            Color(.sRGB, red: 0.7, green: 0.7, blue: 0.5, opacity: 0.2)
+            GameColor.main
                 .ignoresSafeArea()
             VStack {
                 Text("Quiz Time!")
@@ -49,6 +49,16 @@ struct GameView: View {
             .padding(.bottom)
         }
         .navigationBarHidden(true)
+        .background(resultsNavigationLink)
+    }
+    
+    private var resultsNavigationLink: some View {
+        NavigationLink(
+            destination: ResultsView(viewModel: ResultsViewModel(selectionCount: viewModel.selectionCount)),
+            isActive: .constant(viewModel.gameIsOver),
+            label: {
+                EmptyView()
+            })
     }
     
 }

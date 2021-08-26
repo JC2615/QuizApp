@@ -31,6 +31,22 @@ class GameViewModel: ObservableObject {
         game.selections[game.currentQuestion] != nil
     }
     
+    var correctSelectionCount: Int {
+        game.selectionCount.correct
+    }
+    
+    var incorrectSelectionCount: Int {
+        game.selectionCount.incorrect
+    }
+    
+    var gameIsOver: Bool {
+        game.gameIsOver
+    }
+    
+    var selectionCount: (Int, Int) {
+        game.selectionCount
+    }
+    
     func answerText(for index: Int) -> String {
         game.currentQuestion.possibleAnswers[index]
     }
